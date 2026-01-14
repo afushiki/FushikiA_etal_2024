@@ -51,21 +51,21 @@ The analysis pipeline is organized into modular R scripts:
 1. **`Sequencing_analysis_v1.R`**  
    Primary script for preprocessing, quality control, clustering, and visualization of scRNA-seq data.
 
-2. **`SoupX_function_v1.R`**  
+2. [**`SoupX_function_v1.R`**](./Scripts/SoupX_function_v1.R)  
    Estimates and removes ambient RNA contamination using *SoupX*.  
-   Original implementation: [link](https://github.com/constantAmateur/SoupX)
+   Original implementation: https://github.com/constantAmateur/SoupX
 
-3. **`Doublet_function_v1.R`**  
+3. [**`Doublet_function_v1.R`**](./Scripts/Doublet_function_v1.R)  
    Identifies and removes doublets using *DoubletFinder*.  
-   Original implementation: [link](https://github.com/chris-mcginnis-ucsf/DoubletFinder) 
+   Original implementation: https://github.com/chris-mcginnis-ucsf/DoubletFinder
 
 4. **`MASC_analysis_v1.R`**  
    Performs MASC (Mixed-effects modeling of Associations of Single Cells) to test associations between cell populations and disease status at the single-cell level.  
-   Original implementation: [link](https://github.com/immunogenomics/masc)
+   Original implementation: https://github.com/immunogenomics/masc
 
 5. **`Milo_analysis_v1.R`**  
    Conducts differential abundance analysis using *miloR* on KNN graphs derived from scRNA-seq data.  
-   Original implementation: [link](https://github.com/MarioniLab/miloR)
+   Original implementation: https://github.com/MarioniLab/miloR
 
 6. **`Proportion_analysis_df_stat_v1.R`**  
    Generates summary data frames for proportional analysis of cell clusters across samples.
@@ -73,15 +73,15 @@ The analysis pipeline is organized into modular R scripts:
 7. **`Proportion_analysis_plot_v1.R`**  
    Produces proportional plots with statistical comparisons of cluster distributions across experimental conditions.
 
-8. **`GO_analysis_v1.R`**  
+8. [**`GO_analysis_v1.R`**](./Scripts/GO_analysis_v1.R)  
    Performs Gene Ontology (GO) enrichment analysis using *g:Profiler* and generates tabular and graphical outputs.  
-   Original implementation: [link](https://github.com/egonw/r-gprofiler2)
+   Original implementation: https://github.com/egonw/r-gprofiler2
 
 ---
 
 ## Cell Type Annotation
 
-Cell type annotation was performed using [**MapMyCells**](https://portal.brain-map.org/atlases-and-data/bkp/mapmycells), an interactive online tool developed by the NIH BRAIN Initiative Cell Census Network in collaboration with the Allen Institute.
+Cell type annotation was performed using **MapMyCells**, an interactive online tool developed by the NIH BRAIN Initiative Cell Census Network in collaboration with the Allen Institute.
 
 - **Tool**: https://portal.brain-map.org/atlases-and-data/bkp/mapmycells  
 - **Reference Taxonomy**: 10x Whole Mouse Brain (CCN20230722)  
