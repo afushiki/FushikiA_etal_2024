@@ -59,7 +59,7 @@ The analysis pipeline is organized into modular R scripts:
    Identifies and removes doublets using *DoubletFinder*.  
    Original implementation: https://github.com/chris-mcginnis-ucsf/DoubletFinder
 
-4. **`MASC_analysis_v1.R`**  
+4. [**`MASC_analysis_v1.R`**](./Scripts/MASC_analysis_v1.R)  
    Performs MASC (Mixed-effects modeling of Associations of Single Cells) to test associations between cell populations and disease status at the single-cell level.  
    Original implementation: https://github.com/immunogenomics/masc
 
@@ -67,10 +67,10 @@ The analysis pipeline is organized into modular R scripts:
    Conducts differential abundance analysis using *miloR* on KNN graphs derived from scRNA-seq data.  
    Original implementation: https://github.com/MarioniLab/miloR
 
-6. **`Proportion_analysis_df_stat_v1.R`**  
+6. [**`Proportion_analysis_df_stat_v1.R`**](./Scripts/Proportion_analysis_df_stat_v1.R)  
    Generates summary data frames for proportional analysis of cell clusters across samples.
 
-7. **`Proportion_analysis_plot_v1.R`**  
+7. [**`Proportion_analysis_plot_v1.R`**](./Scripts/Proportion_analysis_plot_v1.R)  
    Produces proportional plots with statistical comparisons of cluster distributions across experimental conditions.
 
 8. [**`GO_analysis_v1.R`**](./Scripts/GO_analysis_v1.R)  
