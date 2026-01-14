@@ -63,7 +63,7 @@ The analysis pipeline is organized into modular R scripts:
    Performs MASC (Mixed-effects modeling of Associations of Single Cells) to test associations between cell populations and disease status at the single-cell level.  
    Original implementation: https://github.com/immunogenomics/masc
 
-5. **`Milo_analysis_v1.R`**  
+5. [**`Milo_analysis_v1.R`**](./Scripts/Milo_analysis_v1.R)  
    Conducts differential abundance analysis using *miloR* on KNN graphs derived from scRNA-seq data.  
    Original implementation: https://github.com/MarioniLab/miloR
 
