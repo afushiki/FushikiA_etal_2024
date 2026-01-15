@@ -41,9 +41,9 @@ DeepLabCut (DLC) **v2.3.8** was used for pose estimation–based behavioral anal
 
 ### Required Python Scripts
 
-- [`DLC_sqOF_v1.py`](./DLC_Analysis/Scripts/DLC_sqOF_v1.py)
-- [`DLC_cyOF_v1.py`](./DLC_Analysis/Scripts/DLC_cyOF_v1.py)
-- [`DLC_plot_v1.py`](./DLC_Analysis/Scripts/DLC_plot_v1.py)
+- [`DLC_sqOF_v1.py`](./DLC_Analysis/DLC_sqOF_v1.py)
+- [`DLC_cyOF_v1.py`](./DLC_Analysis/DLC_cyOF_v1.py)
+- [`DLC_plot_v1.py`](./DLC_Analysis/DLC_plot_v1.py)
 
 ---
 
@@ -52,7 +52,11 @@ DeepLabCut (DLC) **v2.3.8** was used for pose estimation–based behavioral anal
 
 A dedicated notebook is provided for **motion sensor–based behavioral analysis**:
 
-- **`Motion_sensor_analysis_v1.ipynb`**
+- [**`Motion_sensor_analysis_v1.ipynb`**](./Motion_Sensor_Analysis/Motion_sensor_analysis_v1.ipynb)
+
+### Required Python Scripts
+
+- [`motion_analysis_functions.py`](./Motion_Sensor_Analysis/motion_analysis_functions.py)
 
 ### Hardware
 
