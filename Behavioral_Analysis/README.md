@@ -32,18 +32,18 @@ DeepLabCut (DLC) **v2.3.8** was used for pose estimation–based behavioral anal
 
 ### Notebooks
 
-- **`1_DLC_analysis_create_csv_v1.ipynb`**  
+- [**`1_DLC_analysis_create_csv_v1.ipynb`**](./DLC_Analysis/1_DLC_analysis_create_csv_v1.ipynb)  
   Processes DeepLabCut output files and generates CSV summary files for downstream analysis.
 
-- **`2_DLC_analysis_create_figure_v1.ipynb`**  
+- [**`2_DLC_analysis_create_figure_v1.ipynb`**](./DLC_Analysis/2_DLC_analysis_create_figure_v1.ipynb)  
   Generates figures and plots using the CSV summaries produced by  
   `1_DLC_analysis_create_csv_v1.ipynb`.
 
 ### Required Python Scripts
 
-- [`DLC_sqOF_v1.py`](./Scripts/DLC_sqOF_v1.py)
-- [`DLC_cyOF_v1.py`](./Scripts/DLC_cyOF_v1.py)
-- [`DLC_plot_v1.py`](./Scripts/DLC_plot_v1.py)
+- [`DLC_sqOF_v1.py`](./DLC_Analysis/Scripts/DLC_sqOF_v1.py)
+- [`DLC_cyOF_v1.py`](./DLC_Analysis/Scripts/DLC_cyOF_v1.py)
+- [`DLC_plot_v1.py`](./DLC_Analysis/Scripts/DLC_plot_v1.py)
 
 ---
 
