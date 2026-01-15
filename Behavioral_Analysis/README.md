@@ -41,9 +41,9 @@ DeepLabCut (DLC) **v2.3.8** was used for pose estimation–based behavioral anal
 
 ### Required Python Scripts
 
-- `DLC_sqOF_analysis_v1.py`
-- `DLC_cyOF_analysis_v1.py`
-- `DLC_create_plot_v1.py`
+- [`DLC_sqOF_v1.py`](./Scripts/DLC_sqOF_v1.py)
+- [`DLC_cyOF_v1.py`](./Scripts/DLC_cyOF_v1.py)
+- [`DLC_plot_v1.py`](./Scripts/DLC_plot_v1.py)
 
 ---
 
