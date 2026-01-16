@@ -48,7 +48,7 @@ Single-cell RNA-sequencing data is deposited in the Gene Expression Omnibus webs
 
 The analysis pipeline is organized into modular R scripts:
 
-1. **`Sequencing_analysis_v1.R`**  
+1. [**`Sequencing_analysis_v1.R`**](./Scripts/Sequencing_analysis_v1.R)  
    Primary script for preprocessing, quality control, clustering, and visualization of scRNA-seq data.
 
 2. [**`SoupX_function_v1.R`**](./Scripts/SoupX_function_v1.R)  
