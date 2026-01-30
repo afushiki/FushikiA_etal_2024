@@ -1,0 +1,14 @@
+Parameter,Value
+Name,ABA CCF 2017
+Type,Mouse Brain
+Template_Orientation, Coronal
+Template_XY_Resolution, 25
+Template_Z_Resolution, 25
+Dim_X,456
+Dim_Y,320
+Dim_Z,528
+Masks,true
+ModifiedIDs,true
+Notes, Masks are kept sagittal to speed up creation of heatmaps
+
+

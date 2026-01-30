@@ -1,0 +1,119 @@
+output_id,name,acronym,red,green,blue,graph_order,parent_ID,parent_acronym
+997,root,root,255,255,255,0,997,root
+8,Basic cell groups and regions,grey,191,218,227,1,997,root
+1009,fiber tracts,fiber tracts,204,204,204,1101,997,root
+967,cranial nerves,cm,204,204,204,1102,1009,fiber tracts
+949,vomeronasal nerve,von,204,204,204,1104,967,cm
+840,olfactory nerve,In,204,204,204,1105,967,cm
+1016,olfactory nerve layer of main olfactory bulb,onl,204,204,204,1106,840,In
+21,"lateral olfactory tract, general",lotg,204,204,204,1107,840,In
+665,"lateral olfactory tract, body",lot,204,204,204,1108,21,lotg
+538,dorsal limb,lotd,204,204,204,1109,21,lotg
+900,"anterior commissure, olfactory limb",aco,204,204,204,1111,840,In
+848,optic nerve,IIn,204,204,204,1112,967,cm
+916,brachium of the superior colliculus,bsc,204,204,204,1114,848,IIn
+336,superior colliculus commissure,csc,204,204,204,1115,848,IIn
+117,optic chiasm,och,204,204,204,1116,848,IIn
+125,optic tract,opt,204,204,204,1117,848,IIn
+832,oculomotor nerve,IIIn,204,204,204,1119,967,cm
+62,medial longitudinal fascicle,mlf,204,204,204,1120,832,IIIn
+158,posterior commissure,pc,204,204,204,1121,832,IIIn
+911,trochlear nerve,IVn,204,204,204,1122,967,cm
+901,trigeminal nerve,Vn,204,204,204,1125,967,cm
+93,motor root of the trigeminal nerve,moV,204,204,204,1126,901,Vn
+229,sensory root of the trigeminal nerve,sV,204,204,204,1127,901,Vn
+794,spinal tract of the trigeminal nerve,sptV,204,204,204,1129,229,sV
+798,facial nerve,VIIn,204,204,204,1130,967,cm
+1116,genu of the facial nerve,gVIIn,204,204,204,1132,798,VIIn
+933,vestibulocochlear nerve,VIIIn,204,204,204,1133,967,cm
+413,vestibular nerve,vVIIIn,204,204,204,1135,933,VIIIn
+948,cochlear nerve,cVIIIn,204,204,204,1136,933,VIIIn
+841,trapezoid body,tb,204,204,204,1137,948,cVIIIn
+506,dorsal acoustic stria,das,204,204,204,1139,948,cVIIIn
+658,lateral lemniscus,ll,204,204,204,1140,948,cVIIIn
+633,inferior colliculus commissure,cic,204,204,204,1141,948,cVIIIn
+482,brachium of the inferior colliculus,bic,204,204,204,1142,948,cVIIIn
+917,vagus nerve,Xn,204,204,204,1144,967,cm
+237,solitary tract,ts,204,204,204,1145,917,Xn
+792,dorsal roots,drt,204,204,204,1149,967,cm
+932,cervicothalamic tract,cett,204,204,204,1150,792,drt
+514,dorsal column,dc,204,204,204,1155,932,cett
+380,cuneate fascicle,cuf,204,204,204,1156,514,dc
+697,medial lemniscus,ml,204,204,204,1159,932,cett
+960,cerebellum related fiber tracts,cbf,204,204,204,1171,1009,fiber tracts
+744,cerebellar commissure,cbc,204,204,204,1172,960,cbf
+752,cerebellar peduncles,cbp,204,204,204,1173,960,cbf
+326,superior cerebelar peduncles,scp,204,204,204,1174,752,cbp
+812,superior cerebellar peduncle decussation,dscp,204,204,204,1175,326,scp
+850,uncinate fascicle,uf,204,204,204,1177,326,scp
+866,ventral spinocerebellar tract,sctv,204,204,204,1178,326,scp
+78,middle cerebellar peduncle,mcp,204,204,204,1179,752,cbp
+1123,inferior cerebellar peduncle,icp,204,204,204,1180,752,cbp
+553,dorsal spinocerebellar tract,sctd,204,204,204,1181,1123,icp
+728,arbor vitae,arb,204,204,204,1188,960,cbf
+484682512,supracallosal cerebral white matter,scwm,204,204,204,1189,1009,fiber tracts
+983,lateral forebrain bundle system,lfbs,204,204,204,1190,1009,fiber tracts
+776,corpus callosum,cc,204,204,204,1191,983,lfbs
+956,"corpus callosum, anterior forceps",fa,204,204,204,1192,776,cc
+579,external capsule,ec,204,204,204,1193,956,fa
+964,"corpus callosum, extreme capsule",ee,204,204,204,1194,776,cc
+1108,genu of corpus callosum,ccg,204,204,204,1195,776,cc
+971,"corpus callosum, posterior forceps",fp,204,204,204,1196,776,cc
+484682516,"corpus callosum, body",ccb,204,204,204,1198,776,cc
+986,"corpus callosum, splenium",ccs,204,204,204,1199,776,cc
+784,corticospinal tract,cst,204,204,204,1200,983,lfbs
+6,internal capsule,int,204,204,204,1201,784,cst
+924,cerebal peduncle,cpd,204,204,204,1202,784,cst
+190,pyramid,py,204,204,204,1207,784,cst
+198,pyramidal decussation,pyd,204,204,204,1208,784,cst
+896,thalamus related,lfbst,204,204,204,1211,983,lfbs
+1092,external medullary lamina of the thalamus,em,204,204,204,1212,896,lfbst
+484682520,optic radiation,or,204,204,204,1216,896,lfbst
+484682524,auditory radiation,ar,204,204,204,1217,896,lfbst
+1000,extrapyramidal fiber systems,eps,204,204,204,1218,1009,fiber tracts
+760,cerebral nuclei related,epsc,204,204,204,1219,1000,eps
+102,nigrostriatal tract,nst,204,204,204,1221,760,epsc
+877,tectospinal pathway,tsp,204,204,204,1226,1000,eps
+1051,direct tectospinal pathway,tspd,204,204,204,1227,877,tsp
+1060,doral tegmental decussation,dtd,204,204,204,1228,877,tsp
+1043,crossed tectospinal pathway,tspc,204,204,204,1229,877,tsp
+863,rubrospinal tract,rust,204,204,204,1230,1000,eps
+397,ventral tegmental decussation,vtd,204,204,204,1231,863,rust
+991,medial forebrain bundle system,mfbs,204,204,204,1238,1009,fiber tracts
+768,cerebrum related,mfbc,204,204,204,1239,991,mfbs
+884,amygdalar capsule,amc,204,204,204,1240,768,mfbc
+908,"anterior commissure, temporal limb",act,204,204,204,1242,768,mfbc
+940,cingulum bundle,cing,204,204,204,1243,768,mfbc
+1099,fornix system,fxs,204,204,204,1244,768,mfbc
+466,alveus,alv,204,204,204,1245,1099,fxs
+530,dorsal fornix,df,204,204,204,1246,1099,fxs
+603,fimbria,fi,204,204,204,1247,1099,fxs
+737,postcommissural fornix,fxpo,204,204,204,1250,1099,fxs
+428,medial corticohypothalamic tract,mct,204,204,204,1251,737,fxpo
+436,columns of the fornix,fx,204,204,204,1252,737,fxpo
+618,hippocampal commissures,hc,204,204,204,1253,1099,fxs
+443,dorsal hippocampal commissure,dhc,204,204,204,1254,618,hc
+449,ventral hippocampal commissure,vhc,204,204,204,1255,618,hc
+301,stria terminalis,st,204,204,204,1259,768,mfbc
+484682528,commissural branch of stria terminalis,stc,204,204,204,1260,301,st
+824,hypothalamus related,mfsbshy,204,204,204,1261,991,mfbs
+54,medial forebrain bundle,mfb,204,204,204,1262,824,mfsbshy
+349,supraoptic commissures,sup,204,204,204,1265,824,mfsbshy
+46,mammillary related,mfbsma,204,204,204,1277,824,mfsbshy
+753,principal mammillary tract,pm,204,204,204,1278,46,mfbsma
+690,mammillothalamic tract,mtt,204,204,204,1279,46,mfbsma
+681,mammillotegmental tract,mtg,204,204,204,1280,46,mfbsma
+673,mammillary peduncle,mp,204,204,204,1281,46,mfbsma
+1083,epithalamus related,mfbse,204,204,204,1284,824,mfsbshy
+802,stria medullaris,sm,204,204,204,1285,1083,mfbse
+595,fasciculus retroflexus,fr,204,204,204,1286,1083,mfbse
+611,habenular commissure,hbc,204,204,204,1287,1083,mfbse
+73,ventricular systems,VS,170,170,170,1292,997,root
+81,lateral ventricle,VL,170,170,170,1293,73,VS
+98,subependymal zone,SEZ,170,170,170,1295,81,VL
+108,choroid plexus,chpl,170,170,170,1296,81,VL
+129,third ventricle,V3,170,170,170,1299,73,VS
+140,cerebral aqueduct,AQ,170,170,170,1300,73,VS
+145,fourth ventricle,V4,170,170,170,1301,73,VS
+153,lateral recess,V4r,170,170,170,1302,145,V4
+164,"central canal, spinal cordmedulla",c,170,170,170,1303,73,VS
