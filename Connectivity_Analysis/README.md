@@ -32,19 +32,19 @@ seaborn     # ver 0.12.2
 
 ### Notebooks
 
-- [**`MitoPark_cell_analysis_v1.ipynb`**](./Connectivity_Analysis/MitoPark_cell_analysis_v1.ipynb)  
+- [**`MitoPark_cell_analysis_v1.ipynb`**](./MitoPark_cell_analysis_v1.ipynb)  
   Processes MitoPark cell composition data and generate a CSV file and accompanying figure.
 
-- [**`MitoPark_projection_analysis_v1.ipynb`**](./Connectivity_Analysis/MitoPark_projection_analysis_v1.ipynb)  
+- [**`MitoPark_projection_analysis_v1.ipynb`**](./MitoPark_projection_analysis_v1.ipynb)  
   Processes MitoPark projection data and generate a CSV file and accompanying figure.
 
-- [**`Connectivity_analysis_v1.ipynb`**](./Connectivity_Analysis/Connectivity_analysis_v1.ipynb)  
+- [**`Connectivity_analysis_v1.ipynb`**](./Connectivity_analysis_v1.ipynb)  
   Processes [BrainJ](https://github.com/lahammond/BrainJ) outputs for rabies and projection datasets, producing summary CSV files and corresponding figures.
 
 
 ### Required Python Scripts
 
-- [`brainJ_output_analysis_v1.py`](./Connectivity_Analysis/brainJ_output_analysisv1.py)
+- [`brainJ_output_analysis_v1.py`](./brainJ_output_analysisv1.py)
 
 ---
 
