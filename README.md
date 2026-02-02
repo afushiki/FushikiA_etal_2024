@@ -5,6 +5,7 @@ A draft of the manuscript is available as a preprint on [bioRxiv](https://www.bi
 
 ## **Contents**
 ### Data
+- Raw behavioral datasets and experimental video recordings have been deposited in BioStudies ([S-BSST2649](https://www.ebi.ac.uk/biostudies/studies/S-BSST2649)).
 - Single-cell RNA-sequencing data is deposited in the Gene Expression Omnibus website ([GSE285508](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE285508)). 
 
 ### Scripts

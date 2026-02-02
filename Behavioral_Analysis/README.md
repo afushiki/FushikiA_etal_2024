@@ -23,6 +23,12 @@ scipy       # ver 1.11.3
 
 ---
 
+## Data Availability
+
+Raw behavioral datasets and experimental video recordings have been deposited in BioStudies ([S-BSST2649](https://www.ebi.ac.uk/biostudies/studies/S-BSST2649)).
+
+---
+
 ## DeepLabCut (DLC) Analysis
 
 DeepLabCut (DLC) **v2.3.8** was used for pose estimation–based behavioral analysis.
