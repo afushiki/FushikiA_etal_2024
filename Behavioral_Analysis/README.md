@@ -1,94 +1,108 @@
 # Behavioral Analysis
 
-This repository provides scripts and resources used for behavioral analysis in [this study](https://www.biorxiv.org/content/10.1101/2024.12.20.629776v1).
+Scripts for the behavioral analyses in
+[Fushiki et al.](https://www.biorxiv.org/content/10.1101/2024.12.20.629776v2) —
+markerless pose estimation of open field and cylinder tests, and wireless motion-sensor recordings.
+
+← [Back to repository overview](../README.md)
+
+---
+
+## Contents
+
+```
+Behavioral_Analysis/
+├── DLC_Analysis/
+│   ├── 1_DLC_analysis_create_csv_v1.ipynb
+│   ├── 2_DLC_analysis_create_figure_v1.ipynb
+│   ├── DLC_sqOF_v1.py
+│   ├── DLC_cyOF_v1.py
+│   └── DLC_plot_v1.py
+└── Motion_Sensor_Analysis/
+    ├── Motion_sensor_analysis_v1.ipynb
+    └── motion_analysis_functions.py
+```
 
 ---
 
 ## Environment
 
-All analyses were performed using the following software versions:
-
-- **Python**: 3.11.5  
-- **Jupyter lab**: 3.6.3  
-
-### Required Python Packages
+| Software | Version |
+| --- | --- |
+| Python | 3.11.5 |
+| JupyterLab | 3.6.3 |
+| DeepLabCut | 2.3.8 |
 
 ```
-numpy       # ver 1.24.3
-pandas      # ver 2.0.3
-matplotlib  # ver 3.7.2
-seaborn     # ver 0.12.2
-scipy       # ver 1.11.3
+numpy==1.24.3
+pandas==2.0.3
+matplotlib==3.7.2
+seaborn==0.12.2
+scipy==1.11.3
 ```
 
----
-
-## Data Availability
-
-Raw behavioral datasets and experimental video recordings have been deposited in BioStudies ([S-BSST2649](https://www.ebi.ac.uk/biostudies/studies/S-BSST2649)).
+DeepLabCut installation is documented at <https://deeplabcut.github.io/DeepLabCut/>.
 
 ---
 
-## DeepLabCut (DLC) Analysis
+## Data
 
-DeepLabCut (DLC) **v2.3.8** was used for pose estimation–based behavioral analysis.
-
-- Official installation guide:  
-  https://deeplabcut.github.io/DeepLabCut/
-
-### Notebooks
-
-- [**`1_DLC_analysis_create_csv_v1.ipynb`**](./DLC_Analysis/1_DLC_analysis_create_csv_v1.ipynb)  
-  Processes DeepLabCut output files and generates CSV summary files for downstream analysis.
-
-- [**`2_DLC_analysis_create_figure_v1.ipynb`**](./DLC_Analysis/2_DLC_analysis_create_figure_v1.ipynb)  
-  Generates figures and plots using the CSV summaries produced by  
-  `1_DLC_analysis_create_csv_v1.ipynb`.
-
-### Required Python Scripts
-
-- [`DLC_sqOF_v1.py`](./DLC_Analysis/DLC_sqOF_v1.py)
-- [`DLC_cyOF_v1.py`](./DLC_Analysis/DLC_cyOF_v1.py)
-- [`DLC_plot_v1.py`](./DLC_Analysis/DLC_plot_v1.py)
+Raw behavioral datasets and experimental video recordings are deposited in BioStudies
+([S-BSST2649](https://www.ebi.ac.uk/biostudies/studies/S-BSST2649)). Download these before running
+the notebooks.
 
 ---
 
-## Motion Sensor Analysis
-### Notebook
+## Pose estimation analysis (`DLC_Analysis/`)
 
-A dedicated notebook is provided for **motion sensor–based behavioral analysis**:
+Run the notebooks in numerical order; the second consumes the output of the first.
 
-- [**`Motion_sensor_analysis_v1.ipynb`**](./Motion_Sensor_Analysis/Motion_sensor_analysis_v1.ipynb)
+| Step | Notebook | Purpose |
+| --- | --- | --- |
+| 1 | [`1_DLC_analysis_create_csv_v1.ipynb`](./DLC_Analysis/1_DLC_analysis_create_csv_v1.ipynb) | Parses DeepLabCut output and writes CSV summary files for downstream analysis |
+| 2 | [`2_DLC_analysis_create_figure_v1.ipynb`](./DLC_Analysis/2_DLC_analysis_create_figure_v1.ipynb) | Generates figures and plots from those CSV summaries |
 
-### Required Python Scripts
+Supporting modules, imported by the notebooks:
 
-- [`motion_analysis_functions.py`](./Motion_Sensor_Analysis/motion_analysis_functions.py)
+| Module | Purpose |
+| --- | --- |
+| [`DLC_sqOF_v1.py`](./DLC_Analysis/DLC_sqOF_v1.py) | Square open field analysis |
+| [`DLC_cyOF_v1.py`](./DLC_Analysis/DLC_cyOF_v1.py) | Cylinder test analysis |
+| [`DLC_plot_v1.py`](./DLC_Analysis/DLC_plot_v1.py) | Shared plotting functions |
 
-### Hardware
+Associated protocol:
+[Open field & cylinder test behavior assays](https://www.protocols.io/view/open-field-amp-cylinder-test-behavior-assays-eq2ly6ypegx9/v1)
 
-The motion sensor devices used in this study are part of the [**Harp** platform](https://www.cf-hw.org/harp/wear):
+---
 
-- **WEAR Basestation**
-- **WEAR – Wireless sensor device**
+## Motion sensor analysis (`Motion_Sensor_Analysis/`)
+
+| File | Purpose |
+| --- | --- |
+| [`Motion_sensor_analysis_v1.ipynb`](./Motion_Sensor_Analysis/Motion_sensor_analysis_v1.ipynb) | Analysis of wireless motion-sensor recordings |
+| [`motion_analysis_functions.py`](./Motion_Sensor_Analysis/motion_analysis_functions.py) | Supporting functions imported by the notebook |
+
+**Hardware.** Recordings were made with the [Harp](https://www.cf-hw.org/harp/wear) platform:
+the WEAR basestation and WEAR wireless sensor device.
 
 ---
 
 ## Notes
 
-- Scripts are versioned (`_v1`) to support reproducibility and future updates.
+Filenames are versioned (`_v1`) so that future revisions can be added without breaking references
+in the manuscript or in downstream analyses.
 
 ---
+
+## Authors
+
+DeepLabCut analysis scripts were written by Akira Fushiki (Columbia University / Allen Institute).
+Motion-sensor analysis scripts were written primarily by Joaquim Alves da Silva
+(Champalimaud Foundation), with modifications by Akira Fushiki.
+
+Corrections, suggestions, and contributions are welcome — please
+[open an issue or pull request](https://github.com/afushiki/FushikiA_etal_2024/issues).
 
 ## Citation
 
-If you use this code, please cite the corresponding publication (details to be added).
-
----
-
-## Contributions
-
-DLC analysis scripts were developed by Akira Fushiki (Columbia University/Allen Institute). Motion sensor analysis scripts were primarily developed by Joaquim Alves da Silva (Champalimaud Foundation), with adjustments made by Akira Fushiki.
-Feedback and contributions are welcome.
-
-If you identify any errors, have suggestions for improvement, or wish to contribute to the codebase, please open an issue or submit a pull request via GitHub. All contributions that improve clarity, functionality, or reproducibility are appreciated.
-
+See the [repository overview](../README.md#citation) for the full citation and BibTeX entry.
