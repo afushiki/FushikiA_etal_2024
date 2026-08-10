@@ -37,7 +37,7 @@ remains available. The code in this repository corresponds to **v2**.
 
 ```
 FushikiA_etal_2024/
-├── Behavioral_Analysis/     # Open field, cylinder, and Pavlovian task analysis
+├── Behavioral_Analysis/     # Open field, cylinder, and Motion sensor analysis
 ├── Connectivity_Analysis/   # Anterograde/retrograde tracing, whole-brain registration & quantification
 ├── Sequencing_Analysis/     # snRNA-seq preprocessing, clustering, differential abundance (Milo)
 ├── LICENSE.txt
@@ -47,7 +47,7 @@ FushikiA_etal_2024/
 | Directory | Contents | Related figures |
 | --- | --- | --- |
 | [`Behavioral_Analysis/`](./Behavioral_Analysis) | Scripts for quantifying locomotion, rearing, tremor, and Pavlovian conditioning | _Figs. 1, 6_ |
-| [`Connectivity_Analysis/`](./Connectivity_Analysis) | Registration to the Allen CCF and quantification of axonal projections and rabies-labeled inputs | _Fig. 5_ |
+| [`Connectivity_Analysis/`](./Connectivity_Analysis) | Registration to the Allen CCF and quantification of axonal projections and rabies-labeled inputs | _Fig. 2, 5_ |
 | [`Sequencing_Analysis/`](./Sequencing_Analysis) | snRNA-seq QC, integration, subtype annotation, and differential abundance testing | _Figs. 2–4_ |
 
 Figure numbers refer to the bioRxiv preprint (v2). Each analysis directory has its own `README.md`
@@ -139,8 +139,7 @@ If you use this code or data, please cite:
 ## Contact
 
 For questions about the code or data, please
-[open an issue](https://github.com/afushiki/FushikiA_etal_2024/issues) or contact
-Akira Fushiki — akira.fushiki@alleninstitute.org
+[open an issue](https://github.com/afushiki/FushikiA_etal_2024/issues).
 
 ---
 
